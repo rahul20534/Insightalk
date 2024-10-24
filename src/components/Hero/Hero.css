@@ -1,0 +1,108 @@
+.hero {
+    width: 100%;
+    height: 500px;
+    display: flex;
+    flex-direction: row;
+    background-color: #F0F5FF;
+    z-index: -1;
+}
+
+.consult {
+    img {
+        width: 250px;
+        height: 200px;
+        margin-top: 160px;
+        margin-left: 40px;
+
+    }
+}
+
+.heading {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-left: 45px;
+    z-index: -1;
+    margin-top: 10px;
+
+
+
+}
+
+.mainheading {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 80px;
+
+
+    h1 {
+        width: 660px;
+        font-family: "Lora", sans-serif;
+        font-size: 45px;
+        font-weight: 600;
+
+        span {
+            color: #2E4985;
+        }
+
+    }
+
+    p {
+        font-family: "Inter", sans-serif;
+        font-size: 16px;
+        font-weight: 500;
+    }
+}
+
+.btn button {
+    font-family: "DM Sans", sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    border: 1px solid #2E4985;
+    width: 320px;
+    padding: 17px 35px 17px 35px;
+    border-radius: 25px;
+    background-color: #2E4985;
+    color: white;
+
+    img {
+        position: relative;
+        top: 4px;
+        left: 10px;
+    }
+
+}
+
+.mobilenumber {
+    p {
+        font-family: "Inter", sans-serif;
+        font-size: 18px;
+        font-weight: 400;
+        color: #2E4985;
+
+        span {
+            margin-left: 10px;
+        }
+    }
+
+}
+
+.motherandgirlimage {
+   
+    .img1{
+        
+        width: 320px;
+        height: 320px;
+        z-index: -1;
+        margin-top: 180px;
+        margin-left: -10px;
+    }
+    .img2{
+        width: 254px;
+        height: 254px;
+        position: relative;
+        bottom: 280px;
+        left: 40px;
+    }
+}

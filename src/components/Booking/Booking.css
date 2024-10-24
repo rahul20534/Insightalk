@@ -1,0 +1,123 @@
+.booking{
+    
+    width: 100%;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    
+}
+
+.mainbooking{
+    width:89vw;
+    
+    height: 400px;
+    display: flex;
+    background-color: #005C65;
+    margin-left: 70px;
+    border-radius: 25px;
+}
+
+.headings{
+    
+    display: flex;
+    flex-direction: column;
+    margin-left: 60px;
+
+    h2{
+        
+        font-family: "Outfit", sans-serif;
+        font-size: 42px;
+         width: 450px;
+       font-weight: 400;
+       color: white;
+       margin-top: 50px;
+       
+    }
+
+    h1{
+        
+        font-family: "Outfit", sans-serif;
+        font-size: 60px;
+        color: white;
+        font-weight: 400;
+        margin-top: -40px;
+      
+    }
+
+    p{
+        font-family: "Outfit", sans-serif;
+        font-size: 18px;
+        font-weight: 400;
+        color: white;
+        margin-top: -30px;
+    }
+}
+
+.but {
+    position: relative;
+    top: 130px;
+        left: 150px;
+    button {
+        font-family: "DM Sans", sans-serif;
+        font-size: 18px;
+        font-weight: 500;
+        border: 1px solid #2E4985;
+        width: 320px;
+        padding: 17px 35px 17px 35px;
+        border-radius: 25px;
+        background-color: #ffffff;
+        color:#2E4985;
+        
+
+        img {
+            position: relative;
+            top: 4px;
+            left: 10px;
+            color:black
+        }
+
+    }
+
+p{
+    
+    color: black;
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: white;
+    margin-left: 30px;
+}
+
+
+  
+
+}
+
+.para{
+      font-family: "Inter", sans-serif;
+        font-size: 18px;
+        font-weight: 400;
+        color: #2E4985;
+        
+
+        span {
+            margin-left: 10px;
+        }
+
+}
+
+.circle{
+    display: flex;
+    
+}
+
+.circle_one{
+    
+    width: 150px;
+    height: 150px;
+    margin-left: 236px;
+    margin-top: 250px;
+
+}
+
+
