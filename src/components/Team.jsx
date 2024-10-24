@@ -95,7 +95,7 @@ const Team = () => {
       <Heading>OUR TEAM</Heading>
 
       <WhyBlock>
-        <h1>Our Experienced<span>Therapists</span></h1>
+        <h1>Our Experienced<span> Therapists</span></h1>
         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
       </WhyBlock>
 
