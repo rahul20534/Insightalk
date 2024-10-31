@@ -17,7 +17,8 @@ const Container = styled.div`
 
 const Heading = styled.h1`
   font-size: 16px;
-  font-weight: 600;
+    font-family: "Outfit", sans-serif;
+    font-weight: 600;
   color: rgba(96, 125, 188, 1);
   text-align: center;
 `;
@@ -34,18 +35,24 @@ const WhyBlock = styled.div`
   h1 {
     margin: 0;
     font-size: 58px;
-    font-family: "Outfit", sans-serif;
+    font-family: "Lora", sans-serif;
     font-weight: 400;
     color: rgba(0, 0, 0, 0.8);
 
     span {
       color: rgb(46, 74, 133);
-      font-weight: 600;
+      text-align:center;
+      
+       font-size: 58px;
+    font-family: "Lora", sans-serif;
+    font-weight: 600;
     }
   }
 
   p {
     font-size: 22px;
+    font-family: "DM Sans", sans-serif;
+    font-weight: 400;
     color: rgba(74, 77, 74, 1);
     line-height: 1.4;
   }
@@ -66,13 +73,14 @@ const ImageContainer = styled.div`
   align-items: center;
   box-sizing: border-box;
   padding: 20px;
-  left:330px;
+  left:360px;
+  
 `;
 
 const Circle = styled.div`
 
- width: 370px;
-  height: 380px;
+ width: 431px;
+  height: 446px;
   margin-left:300px;
  background-color:#B0C2E9;
  border-radius:200px 25px 25px 25px;
@@ -80,10 +88,10 @@ const Circle = styled.div`
 
 const Image = styled.img`
   position: relative;
-  right:350px;
+  right:400px;
   top:25px;
-  width: 330px;
-  height: 330px;
+  width: 385px;
+  height: 394px;
   
 `;
 
@@ -91,27 +99,31 @@ const Block = styled.div`
   display: flex;
   flex-direction: column;
   padding: 20px;
-  width: 700px;
+  width: 580px;
   box-sizing: border-box;
-  position:relative:
-  right:300px;
+  
   gap: 10px;
   
   
   
+  
   h2{
- 
     font-family: "Lora", sans-serif;
     font-size: 42px;
     font-weight: 400;
     margin: 0;
-
     color:#2E4985;
+    width:450px;
+    
   }
 
   p{
+    font-family: "DM Sans", sans-serif;
     font-size: 22px;
     font-weight: 400;
+    
+    margin-top:10px;
+    width:500px;
   }
 `;
 
@@ -120,32 +132,37 @@ const Step = styled.div`
   align-items: center;
   height:45px;
   gap: 20px;
-  font-weight: 600;
+  font-family: "DM Sans", sans-serif;
   font-size: 22px;
+  font-weight: 600;
   color: rgba(74, 77, 74, 1);
+  
 
   div{
   &.icon1 {
     height: 20px;
     width: 20px;
-    background-color: #C6CFE1;
-    border-radius:50%;
+    background-color: #2E4985;
+   
     
   }
 
   &.icon2{
-    border-left: 10px solid white; 
-    border-right: 10px solid white; 
-    border-bottom: 20px solid #C6CFE1; 
-    background-color: #C6CFE1;
-    
+   height: 20px;
+    width: 20px;
+    background-color: #5976B6;
   }
 
   &.icon3{
   height: 20px;
   width: 20px;
-    background-color: #C6CFE1;
-   
+  background-color: #96ADE1;
+  }
+
+  &.icon4{
+  height: 20px;
+  width: 20px;
+  background-color: #CDDAF6;
   }
 
 
@@ -159,49 +176,63 @@ const About = () => {
   return (
     <Container>
       <Heading>ABOUT US</Heading>
-      
+
       <WhyBlock>
         <h1>
-          Why <span>“Insightalk”</span>
+          Talk Your Way To <span>Insights</span>
         </h1>
         <p>
-          Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-          Lorem Ipsum has been the industry's standard dummy text ever since the
-          1500s. Lorem Ipsum is the dummy text where you have to write about
-          insightalk.
+          At Insightalk, we understand that it's okay to not feel okay.
+          <br />
+          <br />
+          We're here to help you find your perfect therapist and focus on maintaining
+          your mental health daily. It's not just about fixing things; it's about finding
+          new ways to feel better. We are committed to providing you with the highest
+          quality of mental healthcare. Our team of qualified therapists is dedicated
+          to helping you achieve your personal goals and live a more fulfilling life.
+          <br />
+          <br />
+          Let's talk about it.
         </p>
       </WhyBlock>
-      
+
       <StepBlock>
         <ImageContainer>
-          
+
           <Circle color="rgba(255, 247, 135, 0.4)" size="200px" top="30%" left="75%" />
           <Image src={male} alt="Description" />
         </ImageContainer>
 
         <Block>
-          <h2>Precision treatment, tailored to the individual</h2>
-          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum.</p>
+          <h2>Define the thoughts that define you</h2>
+          <p>Set meaningful goals, develop a plan of action
+            and overcome challenges along the way.</p>
 
           <Step>
-            <div className="icon1"/>
-            Step sample 1
+            <div className="icon1" />
+            Convenient access anytime, anywhere
           </Step>
 
           <Step>
-            <div className="icon2"/>
-            Step sample 2
+            <div className="icon2" />
+            Precision treatment, tailored to your needs
           </Step>
 
           <Step>
-            <div className="icon3"/>
-            Step sample 3
+            <div className="icon3" />
+            Professional support from licensed therapists
           </Step>
-          
+
+
+          <Step>
+            <div className="icon4" />
+            Safe and supportive space created for you
+          </Step>
+
         </Block>
       </StepBlock>
 
-      
+
 
 
     </Container>

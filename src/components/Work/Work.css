@@ -1,91 +1,110 @@
-.work{
-   
+.work {
     width: 100%;
-    height: 500px;
+    height: auto;
     display: flex;
     flex-direction: column;
     text-align: center;
- 
-    background-color: #F0F5FF;
+    background-color: #D0E5F4;
+    padding: 20px;
+}
 
-    h2{
-        font-family: "Outfit",sans-serif;
-        font-size: 16px;
-        font-weight: 600;
-        margin-top: 25px;
-        color: #607DBC;
+h2 {
+    font-family: "Outfit", sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 25px;
+    color: #607DBC;
+}
+
+.mainheading {
+    align-items: center;
+    margin-top: 10px;
+
+    h1 {
+        font-family: "Lora", sans-serif;
+        font-size: 2.5rem;
+        font-weight: 500;
+        margin: 10px auto;
+        max-width: 900px;
     }
 
-    .mainheading{
-       
-        align-items: center;
-        margin-top: 1px;
-       
-        h1{
-            font-family: "Lora",sans-serif;
-            font-size: 50px;
-            font-weight: 500;
-            
-            width: 700px;
-            margin-top: 10px;
-        }
-
-        p{
-            font-family: "DM Sans",sans-serif;
-            font-size: 20px;
-            font-weight: 400;
-           
-            width: 500px;
-            margin-top: -20px;   
-        }
+    p {
+        font-family: "DM Sans", sans-serif;
+        font-size: 1.25rem;
+        font-weight: 400;
+        margin-top: -20px;
+        max-width: 600px;
+        margin: 0 auto;
     }
 }
 
-.process{
-    
+.process {
     display: flex;
     flex-direction: row;
+    justify-content: space-between; /* Even spacing between items */
+    align-items: flex-start; /* Align children at the start */
+    width: 100%;
+    height: auto;
+    flex-wrap: nowrap; /* Ensure they stay in the same row */
+    margin-top: 20px; /* Add some margin for spacing */
 
-    .one,.two,.three{
-        width: 300px;
-        height: 260px;
-        
+    .one, .two, .three, .four {
+        width: 20%; /* Set width to allow all items in a row */
         display: flex;
         flex-direction: column;
         align-items: center;
-        margin-left: 50px;
+        text-align: center; /* Center text inside children */
+        margin: 0 10px; /* Margin for spacing */
 
-        h1{
-            font-family: "Lora",sans-serif;
-            font-size: 50px;
-            font-weight: 600;
-            color: #607DBC;
-        }
-
-        h2{
-            font-family: "Lora",sans-serif;
-            font-size: 35px;
+        h1 {
+            font-family: "Lora", sans-serif;
+            font-size: 2rem;
             font-weight: 400;
             color: #607DBC;
-            margin-top: -20px;
+            margin-bottom: 10px; /* Space below number */
         }
 
-        p{
-            font-family: "DM Sans",sans-serif;
-            font-size: 16px;
+        h2 {
+            font-family: "Lora", sans-serif;
+            font-size: 1.5rem;
             font-weight: 400;
-            color: black;
-            width: 250px;
-            height: 80px;
-            text-align: center;
-            
-            margin-top: -15px;
+            color: #607DBC;
+            line-height: 1.2;
+            margin-bottom: 5px; /* Space below heading */
+        }
 
+        p {
+            font-family: "DM Sans", sans-serif;
+            font-size: 1rem;
+            font-weight: 400;
+            color: #4A4D4A;
+            line-height: 1.5;
         }
     }
 
-    img{
-        
-        margin-left: 20px;
+    img {
+        width: 40px;
+        height: 40px;
+        margin: 0 10px; /* Adjust image margin */
+        align-self: center; /* Center the image vertically */
+    }
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+    .process {
+        flex-direction: row; /* Keep it in a row on smaller screens */
+        overflow-x: auto; /* Allow horizontal scrolling if needed */
+    }
+
+    .one, .two, .three, .four {
+        width: 25%; /* Adjust width for smaller screens */
+    }
+}
+
+@media (max-width: 768px) {
+    .one, .two, .three, .four {
+        width: 100%; /* Stack vertically on very small screens */
+        margin-bottom: 20px; /* Space between items */
     }
 }
